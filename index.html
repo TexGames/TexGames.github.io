@@ -3,8 +3,28 @@
 <head>
     <meta http-equiv="refresh" content="0; url=https://sites.google.com/view/wtex">
     <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+        #manualRedirect {
+            display: none;
+        }
+    </style>
+    <script>
+        // Show the manual redirect link after 5 seconds
+        setTimeout(function() {
+            document.getElementById('manualRedirect').style.display = 'block';
+        }, 5000);
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://sites.google.com/view/wtex">click here</a>.</p>
+    <h1>Redirecting you now...</h1>
+    <p>If the automatic redirection fails, wait 5 seconds for the manual redirect option to appear.</p>
+    <div id="manualRedirect">
+        <p><a href="https://sites.google.com/view/wtex">Click here to redirect manually</a>.</p>
+    </div>
 </body>
 </html>
